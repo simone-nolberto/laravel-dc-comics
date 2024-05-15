@@ -11,7 +11,7 @@ class ComicSeeder extends Seeder
 
     public function run(): void
     {
-        $comics = config('comics.comics');
+        $comics = config('comics.php');
 
         foreach ($comics as $comic) {
             $newComic = new Comic();
