@@ -36,8 +36,12 @@
                             <td>{{ $comic->series }}</td>
                             <td>{{ $comic->sale_date }}</td>
                             <td>{{ $comic->type }}</td>
-                            <td><a href="{{ route('comics.show', $comic) }}"><i
-                                        class="fa-solid fa-eye"></i></a>/Delete/Update
+                            <td>
+                                <a class="btn btn-primary" href="{{ route('comics.show', $comic) }}"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a class="btn btn-primary" href="{{ route('comics.edit', $comic) }}"><i
+                                        class="fa-solid fa-pen"></i></a>
+                                <a class="btn btn-danger" href=""><i class="fa-solid fa-trash"></i></a>
                             </td>
 
                         </tr>

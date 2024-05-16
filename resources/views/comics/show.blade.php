@@ -27,6 +27,14 @@
                     </div>
                 </div>
 
+
+                <div class="container my-5">
+                    <a class="btn btn-primary" href="{{ route('comics.edit', $comic) }}"><i class="fa-solid fa-pen"></i></a>
+                    <a class="btn btn-danger" href="{{ route('comics.destroy', $comic) }}"><i
+                            class="fa-solid fa-eraser"></i></a>
+                </div>
+
+
             </div>
 
         </div>
