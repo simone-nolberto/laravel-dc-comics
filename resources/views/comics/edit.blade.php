@@ -6,6 +6,8 @@
 
         <h1>Update selected comic</h1>
 
+        @include('partials.validation')
+
 
         <form action="{{ route('comics.update', $comic) }}" method="post">
             @csrf

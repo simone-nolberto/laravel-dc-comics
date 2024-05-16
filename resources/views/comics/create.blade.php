@@ -6,10 +6,11 @@
 
         <h1>Add a new record for your comic</h1>
 
+        @include('partials.validation')
+
 
         <form action="{{ route('comics.store') }}" method="post">
             @csrf
-
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
@@ -17,6 +18,7 @@
                     placeholder="Batman" />
                 <small id="titleHelper" class="form-text text-muted">Insert a title here</small>
             </div>
+
 
             <div>
                 <label for="description" class="form-label">Description</label>
@@ -26,10 +28,10 @@
 
 
             <div class="mb-3">
-                <label for="src" class="form-label">Image URL</label>
-                <input type="text" class="form-control" name="src" id="title" aria-describedby="srcHelper"
+                <label for="thumb" class="form-label">Image URL</label>
+                <input type="text" class="form-control" name="thumb" id="title" aria-describedby="thumbHelper"
                     placeholder="https://" />
-                <small id="srcHelper" class="form-text text-muted">Insert an image url here</small>
+                <small id="thumbHelper" class="form-text text-muted">Insert an image url here</small>
             </div>
 
 
@@ -39,6 +41,7 @@
                     placeholder="$5.99" />
                 <small id="priceHelper" class="form-text text-muted">Insert a price here</small>
             </div>
+
 
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
@@ -50,8 +53,8 @@
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Sale Date</label>
-                <input type="text" class="form-control" name="sale_date" id="sale_date" aria-describedby="sale_dateHelper"
-                    placeholder="1900-01-01" />
+                <input type="text" class="form-control" name="sale_date" id="sale_date"
+                    aria-describedby="sale_dateHelper" placeholder="1900-01-01" />
                 <small id="sale_dateHelper" class="form-text text-muted">Insert the sale date here</small>
             </div>
 
