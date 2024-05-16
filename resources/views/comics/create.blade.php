@@ -36,7 +36,7 @@
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
                 <input type="text" class="form-control" name="price" id="price" aria-describedby="priceHelper"
-                    placeholder="5.99" />
+                    placeholder="$5.99" />
                 <small id="priceHelper" class="form-text text-muted">Insert a price here</small>
             </div>
 

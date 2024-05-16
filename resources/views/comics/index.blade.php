@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-between align-items-center py-3">
             <h1>This is your ADMIN page for comics</h1>
 
-            <a class="btn btn-primary" href="{{route('comics.create')}}">Add</a>
+            <a class="btn btn-primary" href="{{ route('comics.create') }}">Add</a>
         </div>
 
 
